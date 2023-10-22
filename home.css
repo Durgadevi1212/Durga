@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(34,193,195,1) 18%, rgba(191,10,213,0.8719512195121951) 100%);;
+background-attachment: fixed;
+ 
+}
+
+nav{
+    background-color:rgb(11, 195, 195);
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(242, 8, 86);
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    font-size: 38px;
+    font-weight: bolder;
+}
+nav a:hover{
+    color: whitesmoke;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 3px;
+
+
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+@media all and (max-width:650px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+
+    }
+    ul{
+        text-align: center;
+        padding: 0%;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+
+        display: block;
+    }
+
+}
+
+
+.comment-section{
+    top: 150px;
+    margin:30px 50px
+}
+
+.comment-box{
+    margin: 15px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:violet;
+    background-color:white;
+    font-family: 'Open Sans', sans-serif
+}
+
+.username, .email{
+    font-weight: bold;
+}
+
+
+a {
+    text-decoration: none;
+    color: #81FFEF;
+    
+}
+
+li:hover{
+    border-color: #81FFEF;
+}
+.one{
+    background-color:rgb(185, 12, 185);
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color:black;
+    text-align: center;
+    position: fixed;
+    
+}
+p{
+    display: block;
+    font-style: oblique;
+    font-size: smaller;
+}

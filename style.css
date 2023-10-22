@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(34,193,195,1) 18%, rgba(191,10,213,0.8719512195121951) 100%);;
+background-attachment: fixed;
+ 
+}
+
+nav{
+    background-color:rgb(11, 195, 195);
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(242, 8, 86);
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    font-size: 38px;
+    font-weight: bolder;
+}
+nav a:hover{
+    color: whitesmoke;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-bottom: 3px;
+
+
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+@media all and (max-width:650px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+
+    }
+    ul{
+        text-align: center;
+        padding: 0%;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 30px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+
+        display: block;
+    }
+
+}
+
+#form{
+    width:400px;
+    margin:10px auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+
+h1{
+    text-align: center;
+    color:palevioletred;
+}
+
+#form button{
+    background-color:palevioletred;
+    color:white;
+    border: 1px solid palevioletred;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
+
+.input-group input:focus{
+    outline:0;
+}
+
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+}
